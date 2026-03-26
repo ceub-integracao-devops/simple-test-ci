@@ -12,7 +12,7 @@ Acompanhe a evolução do projeto através das branches abaixo. Cada etapa resol
 
 | Etapa | Status | Descrição | Atalhos |
 | :--- | :---: | :--- | :--- |
-| **00. Base** | ⚪ | Código inicial sem validações. | [Ver Código](https://github.com/SEU_USER/devops-shield-lab/blob/main/main.py) |
+| **00. Base** | ⚪ | Código inicial sem validações. | [Ver Código](https://github.com/ceub-integracao-devops/simple-test-ci/commit/230f3a9) |
 | **01. CI Fail** | 🔴 | Introdução de Testes e GitHub Actions (Falha). | [Diff Etapa 01](#) |
 | **02. CI Pass** | 🟢 | Correção da lógica e aprovação na esteira. | [Diff Etapa 02](#) |
 | **03. Security** | ⚠️ | Injeção de vulnerabilidade (Dependabot). | [Diff Etapa 03](#) |
