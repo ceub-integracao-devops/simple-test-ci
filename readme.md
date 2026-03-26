@@ -10,10 +10,10 @@ O objetivo é transformar um código instável e vulnerável em uma aplicação 
 
 Acompanhe a evolução do projeto através das branches abaixo. Cada etapa resolve um problema real de engenharia.
 
-| Etapa | Status | Descrição | Codigo | Actions |
-| :--- | :---: | :--- | :--- |
-| **00. Base** | ⚪ | Código inicial sem validações. | [Ver Código](https://github.com/ceub-integracao-devops/simple-test-ci/commit/230f3a9) | [ N/A]  |
-| **01. CI Fail** | 🔴 | Introdução de Testes e GitHub Actions (Falha). | [Diff Etapa 01]([#](https://github.com/ceub-integracao-devops/simple-test-ci/compare/01-falha-logica?expand=1)) |  [Actions Etapa 1]([#](https://github.com/ceub-integracao-devops/simple-test-ci/actions/runs/23573056104/job/68639633610 ) |  
+| Etapa | Status | Descrição | Código / Diff | Actions |
+| :--- | :---: | :--- | :--- | :--- |
+| **00. Base** | ⚪ | Código inicial sem validações. | [Ver Commit](https://github.com/ceub-integracao-devops/simple-test-ci/commit/230f3a9) | N/A |
+| **01. CI Fail** | 🔴 | Introdução de Testes e GitHub Actions (Falha). | [Diff Etapa 01](https://github.com/ceub-integracao-devops/simple-test-ci/compare/main...01-falha-logica) | [Logs Falha](https://github.com/ceub-integracao-devops/simple-test-ci/actions/runs/14022634351) |
 | **02. CI Pass** | 🟢 | Correção da lógica e aprovação na esteira. | [Diff Etapa 02](#) | [Actions Etapa 02](#) |
 | **03. Security** | ⚠️ | Injeção de vulnerabilidade (Dependabot). | [Diff Etapa 03](#) | [Actions Etapa 03](#) |
 | **04. Final** | ✅ | Projeto consolidado e seguro. | [Diff Etapa 04](#) | [Actions Etapa 04](#) |
@@ -29,12 +29,7 @@ Nesta fase, temos uma classe `Calculadora` que foi entregue sem nenhum teste uni
 * **Risco Oculto:** Existe um erro de lógica na função `operacao_complexa` que passaria despercebido em um deploy manual.
 * **Dependências:** O projeto ainda não possui um arquivo de manifesto (`requirements.txt`), dificultando a rastreabilidade de segurança.
 
-### 🛠️ Comandos Úteis (Ambiente Local):
-```bash
-# Executar a aplicação manualmente
-python main.py
-
-```
+---
 
 ## 🔴 Etapa 01: A Denúncia do Erro (CI Fail)
 
